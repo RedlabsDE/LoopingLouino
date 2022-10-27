@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name LoopingLouino-rescue)(type Legacy)(uri ${KIPRJMOD}/LoopingLouino-rescue.lib)(options "")(descr ""))
+)
