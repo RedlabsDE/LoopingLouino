@@ -31,10 +31,11 @@ find pictures and further description here: https://redlabs.de/blog/looping-loui
 
 ### Upload the LoopingLouino Fimrware 
 
-Prepare to upload:
-1. Get an USB/UART converter
-2. Connect the UART to the PCB (Pinheader P1, or use the Audio Jack J1)
+Prepare:
+- Get an USB/UART converter
+- Connect the UART to the PCB (Pinheader P1, or use the Audio Jack J1)
 
+Upload:
 1. Open the firmware folder in VSCode
 2. Install the "PlatformIO IDE" extension
 3. Open the folder "180223-094129-pro16MHzatmega328" with the extension
