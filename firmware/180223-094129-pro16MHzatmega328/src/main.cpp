@@ -13,7 +13,7 @@
  */
 
  //redlabs PCB 013-00
- //Vin DC 7.5V / 12V
+ //Vin DC 7.5V / 12V (set correct SPEED_CORRECTION_FACTOR)
 
 /*
 v00
@@ -36,10 +36,13 @@ v02
 09.06.2020 1.8    Change RC-pin to PC4/ADC4/RXD (ADC5 seems to be damaged), also changed pinning in blue RC-Control to mid-pin, TODO: correct control of 4 LEDs (instead of 11)
 15.06.2020 R1.9   Running Version - Change to 12V supply/ control of 4 LEDs fixed / change random speed change time from 3 to 5 sec / add ADC lowpass filter to Remote control
 
+12.03.2025        Add Comments & Tidy up. Use 7.5V supply voltage
+
+  
 TODO: extra program with LED show - or LED show after some time if motor is not running
 */
 
-#define MOTOR_L9110   0
+#define MOTOR_L9110   0 //obsolete
 #define MOTOR_L293    0 //obsolete
 #define MOTOR_HBRIDGE 1 //use discrete MOSFET H-Bridge
 

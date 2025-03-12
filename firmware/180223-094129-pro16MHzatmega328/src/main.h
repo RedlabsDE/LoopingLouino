@@ -127,7 +127,7 @@ unsigned char stat_current = 0;  //1: stat_current/continue program, 0: program 
 
 //Vin=7.5V SPEED_CORRECTION_FACTOR = 1
 //Vin= 12V SPEED_CORRECTION_FACTOR = 0.6
-#define SPEED_CORRECTION_FACTOR 0.6
+#define SPEED_CORRECTION_FACTOR 1
 
 #define ABSMINSPEED (20 * SPEED_CORRECTION_FACTOR)
 #define MINSPEED  (70  * SPEED_CORRECTION_FACTOR)//with a lower value the motor will not move

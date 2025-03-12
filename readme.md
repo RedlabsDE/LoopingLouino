@@ -46,3 +46,9 @@ Upload:
 ### Debug the Firmware
 
 In main.cpp set "#define DEBUG 1" to get serial debug information (8n1 19200)
+
+### Adaptions in the Firware
+
+According to the used Supply Voltage, set: #define SPEED_CORRECTION_FACTOR (main.h)
+
+According to the number of LEDs used, set: #define NUM_LEDS (LEDcntrl.h)
