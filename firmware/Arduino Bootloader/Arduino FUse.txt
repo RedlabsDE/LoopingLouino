@@ -1,0 +1,12 @@
+PS - If you just want the same ones as used in a standard Arduino, you can find them in the boards.txt file:
+
+uno.bootloader.low_fuses=0xff
+uno.bootloader.high_fuses=0xde
+uno.bootloader.extended_fuses=0x05
+
+
+
+
+
+
+http://www.engbedded.com/fusecalc
