@@ -5,7 +5,7 @@
 //WS2811 LED control
 //WS2811 LEDS
 #define WS2811_PIN  9
-#define NUM_LEDS 11
+#define NUM_LEDS 20
 #define BRIGHTNESS 50
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_LEDS, WS2811_PIN, NEO_GRB + NEO_KHZ800);
 

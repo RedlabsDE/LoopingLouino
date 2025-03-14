@@ -36,8 +36,7 @@ v02
 09.06.2020 1.8    Change RC-pin to PC4/ADC4/RXD (ADC5 seems to be damaged), also changed pinning in blue RC-Control to mid-pin, TODO: correct control of 4 LEDs (instead of 11)
 15.06.2020 R1.9   Running Version - Change to 12V supply/ control of 4 LEDs fixed / change random speed change time from 3 to 5 sec / add ADC lowpass filter to Remote control
 
-12.03.2025        Add Comments & Tidy up. Use 7.5V supply voltage
-
+12.03.2025        Add Comments & Tidy up. Use 7.5V supply voltage. Use 20 LEDs.
   
 TODO: extra program with LED show - or LED show after some time if motor is not running
 */
@@ -469,8 +468,10 @@ void LEDshowProgram()
   static int LEDcount = 0;    //0-99
   static int LEDsection = 0;  //0,1,2,3
 
+  //TODO make dynamic LEDsection depending on number of LEDs
+  LEDsection = LEDcount/5; //get led number 0-19 from LEDcount 0-99 (20 LEDs)
   //LEDsection = LEDcount/9; //get led number 0-10 from LEDcount 0-99 (11 LEDs)
-  LEDsection = LEDcount/25; //get led number 0-3 from LEDcount 0-99 (4 LEDs)
+  //LEDsection = LEDcount/25; //get led number 0-3 from LEDcount 0-99 (4 LEDs)
 
   if(stat_current == STAT_RUN)
   {
