@@ -13,8 +13,9 @@ find pictures and further description here: https://redlabs.de/blog/looping-loui
   - **datasheet** of used components
   
 ## Hardware
-**Order PCB:** https://aisler.net/p/MKIYMUSK
-
+- Order PCB: https://aisler.net/p/MKIYMUSK
+- Assemble PCB (find BOM in \hardware\schematic)
+- Rework PCB as described in the schematic
 
 ## Firmware
 
@@ -52,3 +53,24 @@ In main.cpp set "#define DEBUG 1" to get serial debug information (8n1 19200)
 According to the used Supply Voltage, set: #define SPEED_CORRECTION_FACTOR (main.h)
 
 According to the number of LEDs used, set: #define NUM_LEDS (LEDcntrl.h)
+
+## Mechanics
+
+//TODO: add pictures
+
+Open all screws (short / long)
+
+remove black cable (between motor and batteries)
+remove red cable (between switch and batteries)
+remove battery clips
+
+add new black cable to motor (20cm)
+add new red cable to switch (20cm)
+
+cut through plastic (battery holder)
+drill through plastic frame (for DC Jack, Button and optional RC-Jack)
+
+cut digital LED strip and attach 3-wire ribbon cable (20LEDs, or other number)
+
+solder 3-wire LED cable to PCB
+solder 2-Wire Motor-and-Switch cable to PCB
